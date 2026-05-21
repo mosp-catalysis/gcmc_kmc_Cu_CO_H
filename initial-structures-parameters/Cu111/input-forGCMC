@@ -1,0 +1,7 @@
+0                                        ! seed_flag
+204.4784   203.64614    37.5650643       ! rx_slab, ry_slab, rz_slab
+10                                        ! z_surf
+0.154   0.0352   0.0177                  ! E_COrep, E_CO_Hrep, E_Hrep
+-0.388932 0.088694 -0.045324 0.100035    ! GT_COgas, GT_COads, GT_H2gas, GT_Hads
+100000 300 7 -0.6                        ! pCO (Pa), Temp (K), pH, U_SHE (V)
+10000000 2000000                         ! nLoop, nLoop_peroutput

@@ -1,0 +1,22 @@
+!!!!! operational control
+1    0                                         ! 1st: 0:generate new struc, 1:read struc from existing last_one;     2nd: 0:generate new seed and record, 1:use old seed
+1000  100  1000                              ! steps;  record interval of steps(interval in total steps!!!); record interval of structs(interval in aj steps!!!)
+S                                              ! 'S':slab, 'P':particle
+F  F  F  F  F  T  T  F                         ! logical: open or not:   1: aj;  2,3: ADS1 ads & des;  4,5: ADS2 ads & des;  6,7,: ADS1,ADS2 diff;  8: reaction;
+12                                             ! threshold of CN (for ADS)
+!!!!! struc & energy parameter for metal       
+Cu                                             ! metal name
+207.03438   212.5   37.565064                ! rx_slab, ry_slab, rz_slab
+-0.31  -1.62  -0.529  0.0017  -0.46  2.431     ! E_Mbond, E_Mcohe; corr_A1, corr_t1, corr_A2, corr_t2 in y = A1*exp(-x/t1) + A2*exp(-x/t2) + 1
+!!!!! energy parameter for ADS            
+0.0     0.0                                    ! sticking coefficient of ADS1(core&edge ; facet) : (eV)
+0.0     0.0                                    ! sticking coefficient of ADS2(core&edge ; facet) : (eV)
+0.0607   0.0834                                ! diffusion barrier of ADS1*, ADS2* : (eV)
+0.154   0.0352   0.0177                        ! Interaction between ADS1-ADS1; ADS1-ADS2; ADS2-ADS2
+0.00    0.00                                   ! BEP coeffient for reaction
+!!!!! environment            
+300       100000       -0.6                    ! T ; P ; U_SHE : (K, Pa, V)
+1         0                                    ! ppADS1 ; ppADS2
+
+
+! ADS1: CO   ADS2: H
